@@ -140,14 +140,9 @@ export default function AdminDashboard() {
         position: "fixed", height: "100vh", overflowY: "auto"
       }}>
         <div style={{ display: "flex", alignItems: "center", gap: "0.65rem", padding: "0 0.6rem", marginBottom: "1.5rem" }}>
-          <div style={{
-            width: 32, height: 32, borderRadius: 8,
-            background: T.yellow,
-            display: "flex", alignItems: "center", justifyContent: "center",
-            fontSize: "1rem", fontWeight: 800, color: "#000"
-          }}>I</div>
+          <img src="/imbilla-logo.png" alt="Imbilla" style={{ width: 40, height: 40, borderRadius: 8 }} />
           <div>
-            <div style={{ fontSize: "0.9rem", fontWeight: 700, color: T.yellow }}>IMBILLA</div>
+            <div style={{ fontSize: "0.9rem", fontWeight: 700, color: T.yellow, letterSpacing: "0.04em" }}>IMBILLA</div>
             <div style={{ fontSize: "0.65rem", color: T.textMute, marginTop: 1 }}>Super Admin</div>
           </div>
         </div>
@@ -401,6 +396,22 @@ export default function AdminDashboard() {
             )}
           </>
         )}
+
+        <footer style={{
+          marginTop: "3rem",
+          paddingTop: "1.25rem",
+          borderTop: `1px solid ${T.border}`,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "0.6rem",
+          fontSize: "0.72rem",
+          color: T.textMute,
+          fontWeight: 500,
+        }}>
+          <img src="/imbilla-logo.png" alt="" style={{ width: 16, height: 16, opacity: 0.7 }} />
+          <span>Powered by <span style={{ color: T.yellow, fontWeight: 600 }}>Imbilla Digital Agency</span></span>
+        </footer>
       </main>
     </div>
   );
